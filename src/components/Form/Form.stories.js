@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import Input from "./Form";
 import Select from "./Select";
+import Icon from "../Icon/Icon";
 
 storiesOf('Form', module)
     .add('Input Small', () => <Input
@@ -19,5 +20,7 @@ storiesOf('Form', module)
         placeholder="Email"
         size="large"
     />)
-    .add('Select', () => <Select
+    .add('Select', () =>
+    <Select
+    size="large"
     ></Select>)
