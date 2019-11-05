@@ -42,13 +42,159 @@ input {
   font-size: 16px;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
 
-select{
-  border-radius: 2px;
+  border: none;
+  background: #FFFFFF;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  border: none;
+  position: relative;
+  display: flex;
+  width: 10em;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+}
+
+
+select {
+  flex: 1;
+  padding: 0 5px;
+  color: black;
+  cursor: pointer;
+  background: #FFFFFF;
   border: 1px solid #F6F7F8;
-  background-color: #FFFFFF;
+  border-radius: 2px;
+  height: 30px;
+}
+/* Arrow */
+.select::after {
+  height: 28px;
+  line-height: 6em;
+  display: inline;
+  vertical-align: baseline;
+  content: '\25BC';
+  position: absolute;
+  font-size: 5px;
+  top: 0;
+  right: 0;
+  padding: 0 5px;
+  border-radius: 2px;
+  background: #FFFFFF;
+  border: 1px solid #F6F7F8;
+  border-left:none;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
 }
 
-.select-large {
-  min-width: 300px;
+.select-large{
+
 }
+
+.select-large::after{
+  width: 20em;
+  height: 5em;
+  line-height:
+}
+
+
+.checkbox {
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+  border: 1px black solid;
+  transition: all 0.5s ease;
+}
+
+.checkbox-blue {
+  border: 2px #33A0FF solid;
+}
+
+.checkbox-black {
+  border: 2px #000000 solid;
+
+}
+.checkbox-blue-checked {
+  background-color: #33A0FF;
+}
+
+.checkbox-black-checked {
+  background-color: #000000;
+}
+
+
+.number-input{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #F6F7F8;
+  font-family: arial;
+  width: 8em;
+  padding: 1em 0;
+  border-radius: 5px;
+}
+.nothing{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.scale{
+  transform: scale(1.1);
+}
+
+.input-with-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-with-button-button {
+  background-color:#33A0FF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color:white;
+  font-family: arial;
+  height: inherit;
+  cursor:pointer;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transform: translateX(-4px);
+  height:30px;
+  font-size: 0.5em;
+}
+
+.button-text{
+  padding: 0.5em 1em;
+}
+
+
+
+
+
+
+/* Transition */

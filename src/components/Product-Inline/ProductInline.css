@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+.product-inline {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 300px;
+  min-height: 300px;
+  border: 1px #F6F7F8 solid;
+}
+
+.flex-row {
+  flex-direction: row;
+  width: 75%;
+  height: 25%;
+}
+
+.flex-column {
+  flex-direction: column;
+  width: 25%;
+  height: 25%;
+}
+
+hr {
+  border: 1px #E5E8EA solid;
+
+}
+
+.hr {
+  width: 80%;
+  margin: 10px 0;
+
+}
+
+.product-filled {
+  background-color: #F6F7F8;
+}
+
+.product-empty {
+  border: 1px #F6F7F8 solid;
+  background-color: #FFFFFF;
+}
+
+.img-container {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.img-button-container {
+  z-index: 2;
+  position: relative;
+  width: 50%;
+  transition: all 0.5s ease;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.product-img:hover{
+  opacity: 0.5;
+}
+.product-img:hover .img-button-container{
+  display: flex;
+}
+
+.product-img:hover :not(.non-opaque){
+  opacity: 0.9;
+}
+
+
+
+.product-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 300px;
+  min-height: 150px;
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.product-img-inline {
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 150px;
+  min-height: 250px;
+  background-size: contain;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 3px #F6F7F8 solid;
+  margin: 25px;
+  border-radius: 5px;
+
+}
+
+.hot {
+  position: absolute;
+  color: white;
+  font-family: arial;
+  background-color: #FF4858;
+  padding: 3px 6px;
+  border-radius: 2px;
+  top:40px;
+  left:40px;
+  font-size: 0.5em;
+}
+
+
+
+.headphones {
+  background-image: url("../Thumbnail-Block/headphones.png");
+}
+
+.laptop {
+  background-image: url("../Thumbnail-Block/laptop.png");
+}
+
+
+.product-img-row {
+  height: 100%;
+  width: 40%;
+}
+
+.product-img-column {
+  height: 40%;
+  width: 100%;
+}
+
+.product-details-inline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.product-details-row {
+
+}
+
+.product-details-column {
+
+}
+
+.product-title-inline {
+  font-family: arial;
+  font-size: 1.2em;
+
+}
+
+.review-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 0 1% 0;
+}
+
+.review-count {
+  color: #C1C8CE;
+  margin: 0 5px;
+}
+
+.review-submit {
+  color: #33A0FF;
+  margin: 0 5px;
+}
+
+.product-info {
+  font-family: arial;
+  font-size: 0.7em;
+}
+
+.stars-block-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+}
+
+
+.prices-inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  font-family: arial;
+}
+
+.price-inline {
+  color: #FF4858;
+  padding-right: 4px;
+  font-size: 1.4em;
+}
+
+.previous-price-inline {
+  color: #C1C8CE;
+  padding-left: 4px;
+  text-decoration: line-through;
+  font-size: 1.4em;
+}
+
+.button-block {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-align-start {
+  align-items: flex-start;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-justify-start {
+  justify-content: flex-start;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.display-none {
+  display: none;
+}

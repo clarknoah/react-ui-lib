@@ -1,18 +1,21 @@
 import React from 'react';
 import './Form.css';
-
+import Icon from "../Icon/Icon";
 
 const Select = (props) => {
   let classList = "";
   console.log(props);
   if(props.size){
-    console.log("there is size");
+
     classList += ` select-${props.size}`;
     console.log(classList);
   }
-  return (<select className={classList}>
-    <option >Select</option>
-    </select>);
+  return (
+    <div className={"select"}>
+    <select className={classList}>
+    <option>{props.text}</option>
+    <div></div></select>
+    </div>);
 }
 
 

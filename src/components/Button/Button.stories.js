@@ -192,3 +192,29 @@ storiesOf('Button', module)
         icon="heart"
         inline
     />)
+    .add('Round Heart Button', () => <Button
+        label=""
+        type="primary"
+        icon="heart-white"
+        round
+    />)
+    .add('Round Cart Button', () => <Button
+        label=""
+        type="primary"
+        icon="cart-white"
+        round
+    />)
+    .add('Round Heart Button Outline', () => <Button
+        label=""
+        type="primary"
+        icon="heart-blue"
+        round
+        outline
+    />)
+    .add('Round Cart Button Outline', () => <Button
+        label=""
+        type="primary"
+        icon="cart-blue"
+        round
+        outline
+    />)

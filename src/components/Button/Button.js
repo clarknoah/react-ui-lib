@@ -6,9 +6,9 @@ import "./heart.png";
 import Icon from "../Icon/Icon"
 // This is a functional component - just sent up a little differently as an arrow function!
 const Button = (props) => {
-
+    console.log(props);
     // Declare a classList variable and set it to an empty string
-    let classList = '';
+    let classList = props.className !== undefined ? props.className: "";
 
     // Create an array of all of the story/component types you want to be
     // included in your component library
@@ -35,14 +35,25 @@ const Button = (props) => {
     }
 
     if (props.large){
-      classList += ` button-large`
+      classList += ` button-large`;
     }
 
     if (props.icon){
-      innerHTML= <div><Icon icon={props.icon}/><span>{props.label}</span></div>;
+      classList += ` contains-icon`;
+      if(props.label==="" || props.label===undefined){
+        innerHTML= <div className={'flex-button'}><Icon icon={props.icon}/></div>;
+      }else{
+        innerHTML= <div className={'flex-button'}><Icon icon={props.icon}/><span>{props.label}</span></div>;
+      }
     }else{
       innerHTML = props.label;
     }
+
+    if (props.round){
+      classList += ` button-round`;
+    }
+
+
     // Give the button's class a value of classList
     return <button className={classList}>
     {innerHTML}
