@@ -69,13 +69,13 @@ input {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  color:white;
-  font-family: arial;
   height: inherit;
   cursor:pointer;
+  border: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  transform: translateX(-4px);
+  border-left: none;
+  transform: translateX(-6px);
   font-size: 0.5em;
 }
 
@@ -93,7 +93,10 @@ input {
 
 .button-text{
   padding: 0.5em 1em;
+  color:white;
+  font-family: arial;
 }
+
 
 
 .input-label {
