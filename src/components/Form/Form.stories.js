@@ -23,10 +23,50 @@ storiesOf('Form', module)
         placeholder="Email"
         size="large"
     />)
-    .add('Select', () =>
+    .add('Select Small Grey Background', () =>
+        <Select
+        size="small"
+        items={["Select"]}
+        background={true}
+        ></Select>
+    )
+
+    .add('Select Medium Grey Background', () =>
+        <Select
+        size="medium"
+        items={["Select"]}
+        background={true}
+        ></Select>
+    )
+
+    .add('Select Large Grey Background', () =>
         <Select
         size="large"
-        text="select"
+        items={["Select"]}
+        background={true}
+        ></Select>
+    )
+    .add('Select Small Border', () =>
+        <Select
+        size="small"
+        items={["Select"]}
+        background={false}
+        ></Select>
+    )
+
+    .add('Select Medium Grey Border', () =>
+        <Select
+        size="medium"
+        items={["Select"]}
+        background={false}
+        ></Select>
+    )
+
+    .add('Select Large Grey Border', () =>
+        <Select
+        size="large"
+        items={["Select"]}
+        background={false}
         ></Select>
     )
     .add('Checkbox Black Uncheck', () =>
@@ -57,7 +97,21 @@ storiesOf('Form', module)
           max={100}
           value={0}/>
     )
-    .add('Input With Button', () =>
+    .add('Input With Button SM', () =>
+        <InputWithButton
+          placeholder="Voucher code"
+          size="small"
+          buttonText="Redeem"
+          />
+    )
+    .add('Input With Button MD', () =>
+        <InputWithButton
+          placeholder="Voucher code"
+          size="medium"
+          buttonText="Redeem"
+          />
+    )
+    .add('Input With Button LG', () =>
         <InputWithButton
           placeholder="Voucher code"
           size="large"

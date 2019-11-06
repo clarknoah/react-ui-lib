@@ -6,7 +6,8 @@ class InputWithButton extends Component {
     super();
     console.log(props);
     this.state = {
-      props: props
+      props: props,
+      classes:`input-with-button-button input-${props.size}`
     }
   }
 
@@ -21,7 +22,7 @@ class InputWithButton extends Component {
           placeholder={this.state.props.placeholder}
           size={this.state.props.size}
           />
-        <div className={"input-with-button-button"}>
+        <div className={this.state.classes}>
           <div className={"button-text"}>
             {this.state.props.buttonText}
           </div>
