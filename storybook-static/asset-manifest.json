@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/main.css",
-    "main.js": "/main.04c7c548e63dceaa96c1.bundle.js",
+    "main.js": "/main.7467208b76d020d9c607.bundle.js",
     "main.css.map": "/main.css.map",
-    "main.js.map": "/main.04c7c548e63dceaa96c1.bundle.js.map",
-    "runtime~main.js": "/runtime~main.04c7c548e63dceaa96c1.bundle.js",
-    "runtime~main.js.map": "/runtime~main.04c7c548e63dceaa96c1.bundle.js.map",
-    "vendors~main.js": "/vendors~main.04c7c548e63dceaa96c1.bundle.js",
-    "vendors~main.js.map": "/vendors~main.04c7c548e63dceaa96c1.bundle.js.map",
+    "main.js.map": "/main.7467208b76d020d9c607.bundle.js.map",
+    "runtime~main.js": "/runtime~main.7467208b76d020d9c607.bundle.js",
+    "runtime~main.js.map": "/runtime~main.7467208b76d020d9c607.bundle.js.map",
+    "vendors~main.js": "/vendors~main.7467208b76d020d9c607.bundle.js",
+    "vendors~main.js.map": "/vendors~main.7467208b76d020d9c607.bundle.js.map",
     "iframe.html": "/iframe.html",
-    "precache-manifest.5dc52c64b1d5d4bcf25f5b521ca284c4.js": "/precache-manifest.5dc52c64b1d5d4bcf25f5b521ca284c4.js",
+    "precache-manifest.16d8391e2f1fd40ac12b7590c16e7ed0.js": "/precache-manifest.16d8391e2f1fd40ac12b7590c16e7ed0.js",
     "service-worker.js": "/service-worker.js",
     "static/media/Icon.css": "/static/media/star.e1800584.png",
     "static/media/ProductInline.css": "/static/media/laptop.c0a117bc.png",
     "static/media/heart.png": "/static/media/heart.c307014c.png"
   },
   "entrypoints": [
-    "runtime~main.04c7c548e63dceaa96c1.bundle.js",
-    "vendors~main.04c7c548e63dceaa96c1.bundle.js",
+    "runtime~main.7467208b76d020d9c607.bundle.js",
+    "vendors~main.7467208b76d020d9c607.bundle.js",
     "main.css",
-    "main.04c7c548e63dceaa96c1.bundle.js"
+    "main.7467208b76d020d9c607.bundle.js"
   ]
 }

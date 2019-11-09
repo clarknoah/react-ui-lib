@@ -373,14 +373,14 @@ input {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  color:white;
-  font-family: arial;
   height: inherit;
   cursor:pointer;
+  border: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  -webkit-transform: translateX(-4px);
-          transform: translateX(-4px);
+  border-left: none;
+  -webkit-transform: translateX(-6px);
+          transform: translateX(-6px);
   font-size: 0.5em;
 }
 
@@ -398,7 +398,10 @@ input {
 
 .button-text{
   padding: 0.5em 1em;
+  color:white;
+  font-family: arial;
 }
+
 
 
 .input-label {
@@ -610,7 +613,7 @@ width:12em;
  padding: 5px 0;
 }
 
-
+/* 
 .input-small {
   padding: 0 10px;
   height: 24px;
@@ -618,26 +621,6 @@ width:12em;
   border: 1px solid #F6F7F8;
 
 
-}
-
-.input-small::-webkit-input-placeholder{
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 14px;
-}
-
-.input-small::-moz-placeholder{
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 14px;
-}
-
-.input-small:-ms-input-placeholder{
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 14px;
-}
-
-.input-small::-ms-input-placeholder{
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 14px;
 }
 
 .input-small::placeholder{
@@ -651,26 +634,6 @@ width:12em;
   border-radius: 5px;
   border: 1px solid #F6F7F8;
 
-}
-
-.input-medium::-webkit-input-placeholder{
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-}
-
-.input-medium::-moz-placeholder{
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-}
-
-.input-medium:-ms-input-placeholder{
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-}
-
-.input-medium::-ms-input-placeholder{
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
 }
 
 .input-medium::placeholder{
@@ -687,30 +650,10 @@ width:12em;
 
 }
 
-.input-large::-webkit-input-placeholder{
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-}
-
-.input-large::-moz-placeholder{
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-}
-
-.input-large:-ms-input-placeholder{
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-}
-
-.input-large::-ms-input-placeholder{
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-}
-
 .input-large::placeholder{
   color: rgba(0, 0, 0, 0.5);
   font-size: 16px;
-}
+} */
 
 * {
   box-sizing: border-box;
